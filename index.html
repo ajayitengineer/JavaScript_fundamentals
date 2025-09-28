@@ -5,27 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Playground</title>
-    <style>
-        .highlight {
-            background-color: yellow;
-        }
-
-        #container {
-            border: 1px solid black;
-            padding: 10px;
-            margin: 10px 0;
-        }
-
-        button {
-            margin: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
     <h1>DOM Playground</h1>
 
-    <div id="container">
+    <div id="container" class="container">
+        <!-- this is comment -->
         <p class="text">Paragraph 1</p>
         <p class="text">Paragraph 2</p>
         <p class="text">Paragraph 3</p>
@@ -34,12 +21,20 @@
             <li>Item 2</li>
         </ul>
     </div>
-
+    <div id="cont">
+        <p>Paragraph 4</p>
+        <p>Paragraph 5</p>
+    </div>
+    <p>Paragraph 6</p>
+    <p>Paragraph 7</p>
     <input type="text" id="inputField" placeholder="Type something">
     <button id="addItemBtn">Add List Item</button>
     <button id="removeItemBtn">Remove Last Item</button>
     <button id="highlightBtn">Highlight Paragraphs</button>
-    <script src="index.js"></script>
+    <button id="toggle">Toggle class</button>
+    <script src="DOM/dom_01.js"></script>
+    <script type="module" src="DOM/dom_02.js"></script>
+    <script type="module" src="DOM/dom_03.js"></script>
 </body>
 
 </html>
