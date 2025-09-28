@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-workers!</title>
+    <style>
+        ul {
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Web Workers in JavaScript-From Start to Advanced</h1>
+    <p>The Problem Web Workers Solve</p>
+    <p>JavaScript is single-threaded (it runs on one main thread → the UI thread).
+        👉 If you run heavy tasks (large loops, image processing, crypto hashing, etc.) on the main thread, your UI
+        freezes.</p>
+    <p>JavaScript is single-threaded (it runs on one main thread → the UI thread).
+        👉 If you run heavy tasks (large loops, image processing, crypto hashing, etc.) on the main thread, your UI
+        freezes.
+        Web Workers = run JavaScript in background threads (separate from the main UI thread).</p>
+    <p>They don’t block the UI.</p>
+    <p>They communicate via messages (postMessage & onmessage).</p>
+    <p>They can’t directly access DOM (sandboxed environment).</p>
+    <h1>Types of Web Workers</h1>
+    <p>(1.) Dedicated Worker – tied to a single script; one-to-one with main thread.</p>
+    <p>(2.) Shared Worker – can be shared across multiple scripts/tabs/origins.</p>
+    <p>(3.) Service Worker – proxy layer between app & network (used in PWA, caching, push notifications).</p>
+    <script src="index.js"></script>
+</body>
+
+</html>

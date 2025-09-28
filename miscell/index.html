@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin: 20px;
+            border: 1px solid black;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #target {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+
+        }
+
+        ul,
+        li {
+            border: 1px solid black;
+            padding: 10px;
+            list-style-type: none;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <input type="text" id="input">
+    <button id="button">Test throttling!</button>
+    <h1>Events: (Capturing, Bubbling, Propgation, Delgation)</h1>
+    <div id="outer">
+        <div id="inner">
+            <button id="target">Target!</button>
+        </div>
+    </div>
+    <ul id="list">
+        <h1>Event delgation</h1>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+        <li>Fourth</li>
+        <li>Fifth</li>
+    </ul>;
+
+    <script src="debouncing.js"></script>
+    <script src="throttling.js"></script>
+    <script src="events.js"></script>
+    <script src="delegation.js"></script>
+
+</body>
+
+</html>

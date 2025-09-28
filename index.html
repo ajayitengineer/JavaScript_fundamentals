@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Playground</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+
+        #container {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        button {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>DOM Playground</h1>
+
+    <div id="container">
+        <p class="text">Paragraph 1</p>
+        <p class="text">Paragraph 2</p>
+        <p class="text">Paragraph 3</p>
+        <ul id="list">
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ul>
+    </div>
+
+    <input type="text" id="inputField" placeholder="Type something">
+    <button id="addItemBtn">Add List Item</button>
+    <button id="removeItemBtn">Remove Last Item</button>
+    <button id="highlightBtn">Highlight Paragraphs</button>
+    <script src="index.js"></script>
+</body>
+
+</html>
